@@ -1,25 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function TextSubmitApp() {
+    const [inputText, setInputText] = useState('');
+    const [submittedText, setSubmittedText] = useState('');
+
+    const handleInputChange = (e) => {
+        setInputText(e.target.value);
+    };
+
+    const handleSubmit = () => {
+        setSubmittedText(inputText);
+    };
+
+    return (
+        <div>
+            <input 
+                type="text" 
+                value={inputText} 
+                onChange={handleInputChange} 
+                placeholder="Enter text here" 
+            />
+            <button onClick={handleSubmit}>Submit</button>
+            <div>
+                <p>Submitted Text: {submittedText}</p>
+            </div>
+        </div>
+    );
 }
 
-export default App;
+export default TextSubmitApp;
+
+
