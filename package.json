@@ -1,0 +1,24 @@
+{
+  "name": "node_search_aggregate",
+  "version": "1.0.0",
+  "description": "Simple app that will have a form",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garg-anubhav53/node_search_aggregate.git"
+  },
+  "keywords": [
+    "search",
+    "llm",
+    "node"
+  ],
+  "author": "Anubhav Garg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garg-anubhav53/node_search_aggregate/issues"
+  },
+  "homepage": "https://github.com/garg-anubhav53/node_search_aggregate#readme"
+}
